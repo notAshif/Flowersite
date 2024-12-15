@@ -1,0 +1,170 @@
+.sec {
+    background-color: #433b45;
+    padding: 20px 10px; 
+}
+
+.text-heading h1 {
+    font-size: 2.2rem; 
+    color: #E2DBD4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.text-heading p {
+    text-align: center;
+    font-size: 1rem; 
+    color: #CFC3C6;
+    max-width: 90%; 
+    margin: 10px auto 20px;
+    opacity: 0.7;
+}
+
+.map-container {
+    position: relative;
+    width: 100%; 
+    max-width: 1000px;
+    height: 400px; 
+    background: url('../assets/map.png') center/cover no-repeat;
+    border-radius: 12px;
+    margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+    .map-container {
+        height: 500px;
+    }
+}
+
+.marker {
+    position: absolute;
+    width: 10px;
+    height: 10px; 
+    background-color: #CFC3C6;
+    border: 2px solid #6A5975;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.marker:hover {
+    transform: scale(1.3);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #6A5975;
+    padding: 15px;
+    border-radius: 12px;
+    color: #CFC3C6;
+    width: 80%; 
+    max-width: 250px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.popup h3 {
+    margin-top: 0;
+    font-size: 1rem; 
+    color: #CFC3C6;
+    opacity: 0.7;
+}
+
+.hr {
+    margin-top: 8px;
+    border-top: 1px solid #CFC3C6;
+    opacity: 0.7;
+}
+
+.popup p {
+    font-size: 0.9rem; 
+    margin: 10px 0;
+    color: #CFC3C6;
+    opacity: 0.7;
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .search-container {
+        flex-direction: row; 
+    }
+}
+
+.search-container input {
+    width: 80%; 
+    max-width: 300px; 
+    padding: 10px 15px;
+    border-bottom: 1px solid #6A5975;
+    background-color: #433b45;
+    color: #CFC3C6;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: 1px solid #6A5975;
+    background-color: transparent;
+    color: #CFC3C6;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #6A5975;
+}
+
+
+.marker-pskov {
+    top: 30%;
+    left: 20%;
+}
+
+.marker-sangar {
+    top: 50%;
+    left: 80%;
+}
+
+.marker-ps1 {
+    top: 70%;
+    left: 30%;
+}
+
+.marker-ps2 {
+    top: 30%;
+    left: 50%;
+}
+
+
+@media (max-width: 576px) {
+    .text-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .popup {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .popup h3 {
+        font-size: 0.9rem;
+    }
+
+    .popup p {
+        font-size: 0.8rem;
+    }
+}

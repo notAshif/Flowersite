@@ -1,0 +1,143 @@
+.about_section {
+    width: 100%;
+    height: auto; 
+    padding: 10px 10vw; 
+    background-color: #39313C;
+}
+
+.about_section h1 {
+    text-align: left;
+    font-size: 2.5rem; 
+    margin-top: 40px;
+    color: #CFC3C6;
+}
+
+.about_section h1::before{
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 0;
+    bottom: 6%;
+    height: 15px;
+    background-color: #CFC3C6;
+    z-index: 1;
+    opacity: .5;
+    max-width: 300px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row; 
+        justify-content: space-between;
+        gap: 50px;
+    }
+}
+
+.text {
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    color: #CFC3C6;
+}
+
+.text span {
+    font-size: 1rem;
+    color: #CFC3C6;
+    opacity: 0.7;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .column {
+        grid-template-columns: 2fr 1fr 1fr; 
+    }
+}
+
+.text_section {
+    background-color: #6A5975;
+    padding: 20px;
+    max-width: 100%; 
+    color: #CFC3C6;
+}
+
+.text_section h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.text_section p {
+    font-size: 0.9rem; 
+    color: #CFC3C6;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.unique {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.text_section a {
+    color: #CFC3C6;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.profile_section {
+    background-color: #6A5975;
+    padding: 20px;
+    width: 100%; 
+    max-width: 550px; 
+    color: #CFC3C6;
+    margin: 0 auto; 
+}
+
+.profile_section h3 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+
+.profile_section p {
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .text_section,
+    .profile_section {
+        padding: 15px;
+    }
+
+    .text_section p,
+    .profile_section p {
+        font-size: 0.9rem;
+    }
+}

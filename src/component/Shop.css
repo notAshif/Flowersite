@@ -1,0 +1,155 @@
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.pricing-card {
+  background: #CFC3C6;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  width: 320px;
+  cursor: pointer;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.selected {
+  transform: translateY(-15px) scale(1.05);
+}
+
+.pricing-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #6A5975;
+  opacity: .7;
+  margin-bottom: 20px;
+}
+
+.pricing-card img {
+  height: 340px;
+  width: 340px;
+  background-color: #D8CECC;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.pricing-card p {
+  font-size: 1.7rem;
+  margin-top: 20px;
+}
+
+.featured {
+  background: #CFC3C6;
+  transform: translateY(-30px);
+}
+
+.featured:hover {
+  transform: translateY(-40px);
+}
+
+.btn {
+  background: #6A5975;
+  color: #CFC3C6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  border: 1px solid #6A5975;
+}
+
+.btn:hover {
+  background: #CFC3C6;
+  color: #6A5975;
+  transform: scale(1.05);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.heading h1 {
+  display: inline-block;
+  position: relative;
+  color: #6A5975;
+}
+
+.heading h1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  background-color: #CFC3C6;
+  z-index: 1;
+  opacity: .5;
+}
+
+.bouquet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #6A5975;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.bouquet-list li {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.bouquet-list .active {
+  font-weight: bold;
+  color: #6A5975;
+  list-style-type: disc;
+}
+
+.bouquet-list li:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .bouquet-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
